@@ -6,10 +6,16 @@ float AIRRESISTANCE = 0.05;
 float REPELLFORCE = 100;
 
 void setup() {
-  size(640, 360);
+  size(150,300);
   background(255);
   objects = new ArrayList<PhysicsObject>();
   repellers = new ArrayList<Repeller>();
+}
+
+void keyPressed() {
+  if(key == 'A') {
+    setup();
+  }
 }
 
 void mousePressed() {
